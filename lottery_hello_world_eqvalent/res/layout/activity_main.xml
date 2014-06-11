@@ -1,8 +1,103 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.lottery_hello_world_eqvalent.MainActivity"
-    tools:ignore="MergeRootFrame" />
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
 
+    <EditText
+        android:id="@+id/SuperlottoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="19dp"
+        android:ems="10"
+        android:text="Superlotto" />
+        
+    <EditText
+        android:id="@+id/EnterLotteryNumbersText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SuperlottoText"
+        android:layout_below="@+id/SuperlottoText"
+        android:layout_marginTop="13dp"
+        android:ems="10" 
+        android:text="Enter Lottery Numbers" />
+
+    <EditText
+        android:id="@+id/EditText01"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/EnterLotteryNumbersText"
+        android:layout_below="@+id/EnterLotteryNumbersText"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/EditText02"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/EditText01"
+        android:layout_alignBottom="@+id/EditText01"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/EditText01"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/EditText03"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/EditText02"
+        android:layout_alignBottom="@+id/EditText02"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@+id/EditText02"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/EditText04"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/EditText03"
+        android:layout_alignBottom="@+id/EditText03"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/EditText03"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/EditText05"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/EditText04"
+        android:layout_alignBottom="@+id/EditText04"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/EditText04"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/EditText06"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBaseline="@+id/EditText05"
+        android:layout_alignBottom="@+id/EditText05"
+        android:layout_marginLeft="23dp"
+        android:layout_toRightOf="@+id/EditText05"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/DisplayNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/EditText01"
+        android:layout_centerVertical="true"
+        android:text="TextView" />
+
+</RelativeLayout>
