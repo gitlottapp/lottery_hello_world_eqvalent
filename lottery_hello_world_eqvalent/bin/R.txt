@@ -235,13 +235,8 @@ int drawable abc_textfield_searchview_holo_light 0x7f020054
 int drawable abc_textfield_searchview_right_holo_dark 0x7f020055
 int drawable abc_textfield_searchview_right_holo_light 0x7f020056
 int drawable ic_launcher 0x7f020057
-int id DisplayNumbers 0x7f050044
+int id DisplayNumbers 0x7f05003f
 int id EditText01 0x7f05003e
-int id EditText02 0x7f05003f
-int id EditText03 0x7f050040
-int id EditText04 0x7f050041
-int id EditText05 0x7f050042
-int id EditText06 0x7f050043
 int id EnterLotteryNumbersText 0x7f05003d
 int id SuperlottoText 0x7f05003c
 int id action_bar 0x7f05001c
@@ -255,7 +250,7 @@ int id action_context_bar 0x7f05001d
 int id action_menu_divider 0x7f050016
 int id action_menu_presenter 0x7f050017
 int id action_mode_close_button 0x7f050024
-int id action_settings 0x7f050045
+int id action_settings 0x7f050040
 int id activity_chooser_view_content 0x7f050025
 int id always 0x7f05000b
 int id beginning 0x7f050011
