@@ -29,7 +29,7 @@ public class MainActivity extends Activity {
 	String[] textArray;
 	TextView displayNumbers;
 
-	// THis is the equavalent of java main method
+	// THis is the equavalent of java main methods
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		System.out.println("onCreate() is called");
@@ -70,7 +70,7 @@ public class MainActivity extends Activity {
 	}
 
 	// This method is used to display a menu in your app , we don't need to
-	// worry abt that for nw.
+	// worry about that for now
 	/*
 	 * @Override public boolean onCreateOptionsMenu(Menu menu) { // Inflate the
 	 * menu; this adds items to the action bar if it is present.

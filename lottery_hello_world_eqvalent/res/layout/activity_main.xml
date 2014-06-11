@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".MainActivity" >
-
+<!-- dummy comments -->
     <EditText
         android:id="@+id/SuperlottoText"
         android:layout_width="wrap_content"
