@@ -75,7 +75,7 @@ public class MainActivity extends Activity {
 		displayNumbers = (TextView) findViewById(R.id.DisplayNumbers);
 	}
 
-	//let the user type the lottery manually and save the data in a string
+	//let the user type the lottery manually and save the data in a string and display it back to the user
 	//http://www.learn2crack.com/2014/02/android-textwatcher-example.html
 	//http://rajeshvijayakumar.blogspot.com/2013/03/text-watcher-example-in-android.html
 	public void get_user_data_manually(){
