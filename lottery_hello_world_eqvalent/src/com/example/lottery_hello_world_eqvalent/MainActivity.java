@@ -12,8 +12,16 @@ package com.example.lottery_hello_world_eqvalent;
  * 
  * */
 
+/*SUMMARY OF CLASS (only step1.1 (entering manually))
+ * intialized your edittext, textview
+ * intialize/declare Step1_class obj
+ * 
+ * */
+
+
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
@@ -21,7 +29,7 @@ import android.widget.TextView;
 
 //hover over the Activity with your mouse and eclipse will display a drop down, the best explain on this topic
 public class MainActivity extends Activity {
-	// Intialize every thing here
+	// Intialize these objs for the Step1_class constructor
 	EditText editText01;
 	//below lines comment to make the code simpler
 	/*EditText editText02;
@@ -29,7 +37,8 @@ public class MainActivity extends Activity {
 	EditText editText04;
 	EditText editText05;
 	EditText editText06;*/
-	String[] textArray;
+	//don't need the below array
+	//String[] textArray;
 	TextView displayNumbers;
 	CharSequence store_value_from_editText01;
 	
@@ -38,13 +47,20 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		System.out.println("onCreate() is called");
 		
+		//if u don't put the below piece of code, u will get a StrickMode$AndroidBlockGuardPolicy exception
+		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+		.permitAll().build();
+		StrictMode.setThreadPolicy(policy);
+
+		
 		//??????
 		super.onCreate(savedInstanceState);
 		
 		// @param determine how to screen will look like
 		setContentView(R.layout.activity_main);
 
-		intialized_every_thing_here();
+		/*
+		 * intialized_every_thing_here();
 		System.out.println("intialized_every_thing_here() is called");
 
 		//displays the array first element in the textView
@@ -54,21 +70,44 @@ public class MainActivity extends Activity {
 		get_user_data_manually();
 		System.out.println("get_user_data_manually() is called");
 		
+		*/
+		
+		System.out.println("Step1_class is called");
+		Step1_class step1_class_obj = new Step1_class(this, editText01, displayNumbers);
+		
+		
 	}
+}
 
-	// THis method is used to intialized all the required obj in our project and it gets run right after....
+
+
+
+
+
+
+
+
+
+
+
+
+//below code has been created in its own class
+
+	/*
+	 * // THis method is used to intialized all the required obj in our project and it gets run right after....
 	// ....the setContentView() method (its onCreate)
 	public void intialized_every_thing_here() {
 		editText01 = (EditText) findViewById(R.id.EditText01);
 		//below lines comment to make the code simpler
-		/*editText02 = (EditText) findViewById(R.id.EditText02);
+		editText02 = (EditText) findViewById(R.id.EditText02);
 		editText03 = (EditText) findViewById(R.id.EditText03);
 		editText04 = (EditText) findViewById(R.id.EditText04);
 		editText05 = (EditText) findViewById(R.id.EditText05);
-		editText06 = (EditText) findViewById(R.id.EditText06);*/
+		editText06 = (EditText) findViewById(R.id.EditText06);
 		//get the text as user enter it in the text
 		
-		textArray = new String[] { editText01.getText().toString()};	
+		//don't need the below array to store for nw... all the getting user text happens in the listener
+		//textArray = new String[] { editText01.getText().toString()};	
 		//below lines comment to make the code simpler
 		//,editText02.getText().toString(),editText03.getText().toString(),editText04.getText().toString(),editText05.getText().toString(),editText06.getText().toString() 
 
@@ -93,12 +132,12 @@ public class MainActivity extends Activity {
 			}
 
 			//as user type the stuff in the edittext, it is displayed in the textview
-			/*
+			
 			 * @param 	its the whatever the use type in 
 			 * @param	the max value that a user can type
 			 * @param	
 			 * @param
-			 * */
+			 * 
 			@Override
 			public void onTextChanged(CharSequence s, int start, int before,
 					int count) {
@@ -120,6 +159,8 @@ public class MainActivity extends Activity {
 		
 	}
 	
+	*/
+	
 	// This method is used to display a menu in your app , we don't need to
 	// worry about that for now
 	/*
@@ -128,4 +169,4 @@ public class MainActivity extends Activity {
 	 * getMenuInflater().inflate(R.menu.main, menu); return true; }
 	 */
 
-}
+
